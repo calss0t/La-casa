@@ -2,13 +2,15 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header';
 import TopBlock from './Components/TopBlock';
-import { BookingForm } from './Components/Selector';
+// import { BookingForm } from '../Selector';
+import About from './Components/About';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Header />
       <TopBlock />
+      <About />
     </div>
   );
 }

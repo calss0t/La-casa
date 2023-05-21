@@ -1,6 +1,28 @@
 .App {
-  font-family: sans-serif;
-  text-align: center;
+  /* font-family: sans-serif;
+  text-align: center; */
+  background-color: #E5E5E5;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/Montserrat-Medium.ttf");
 }
 
 

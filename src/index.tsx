@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import "flatpickr/dist/themes/material_green.css"
+// import "flatpickr/dist/themes/material_green.css"
 
 
 const root = ReactDOM.createRoot(
