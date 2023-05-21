@@ -26,9 +26,9 @@ const buttonText = css({
 })
 
 
-const aboutSection = css({
+const Section = css({
     display: "flex",
-    padding: "156px 140px 0px",
+    padding: "130px 140px 131px",
     alignItems:"center"
 })
 
@@ -66,7 +66,7 @@ const imageStyle = css({
 
 export {
     imageStyle,
-    aboutSection,
+    Section,
     Button,
     title,
     paragraph,

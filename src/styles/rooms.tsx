@@ -26,10 +26,11 @@ const buttonText = css({
 })
 
 
-const aboutSection = css({
+const Section = css({
     display: "flex",
-    padding: "156px 140px 0px",
-    alignItems:"center"
+    padding: "45px 140px 45px",
+    alignItems:"center",
+    backgroundColor: "rgba(176, 141, 114, 0.05)"
 })
 
 const textBlock = css({
@@ -53,6 +54,13 @@ const paragraph = css({
     color: "rgba(48, 71, 87, 0.8)"
 })
 
+const roomsTypeText = css ({
+    fontFamily:"Montserrat-SemiBold",
+    color: "rgba(125, 56, 100, 0.8)",
+    fontSize: "18px",
+    lineHeight: "163.15%",
+})
+
 
 const imageStyle = css({
     objectFit: "cover", 
@@ -66,10 +74,11 @@ const imageStyle = css({
 
 export {
     imageStyle,
-    aboutSection,
+    Section,
     Button,
     title,
     paragraph,
     textBlock,
-    buttonText
+    buttonText,
+    roomsTypeText
 }
