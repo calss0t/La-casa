@@ -25,16 +25,21 @@ const buttonText = css({
     lineHeight: "24px",
 })
 
-
-const Section = css({
-    display: "flex",
-    padding: "45px 140px 45px",
-    alignItems:"center",
+const block= css ({
     backgroundColor: "rgba(176, 141, 114, 0.05)"
 })
 
+
+const Section = css({
+    display: "flex",
+    margin: "auto",
+    width:"75%",
+    paddingTop: "45px",
+    paddingBottom:"45px",
+    alignItems:"center",
+})
+
 const textBlock = css({
-    paddingRight: "130px",
     height:"100%", 
 })
 
@@ -80,5 +85,6 @@ export {
     paragraph,
     textBlock,
     buttonText,
-    roomsTypeText
+    roomsTypeText,
+    block
 }

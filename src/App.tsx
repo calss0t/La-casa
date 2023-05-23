@@ -6,6 +6,7 @@ import TopBlock from './Components/TopBlock';
 import About from './Components/About';
 import Breakfast from './Components/Breakfast';
 import Rooms from './Components/Rooms';
+import Activities from './Components/Activities';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Breakfast />
       <Rooms />
+      <Activities/>
     </div>
   );
 }

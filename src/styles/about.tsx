@@ -25,15 +25,21 @@ const buttonText = css({
     lineHeight: "24px",
 })
 
+const block= css ({
+    backgroundColor: "rgba(176, 141, 114, 0.05)"
+})
 
-const aboutSection = css({
+
+const Section = css({
     display: "flex",
-    padding: "156px 140px 0px",
-    alignItems:"center"
+    margin: "auto",
+    width:"75%",
+    paddingTop: "45px",
+    paddingBottom:"45px",
+    alignItems:"center",
 })
 
 const textBlock = css({
-    paddingRight: "130px",
     height:"100%", 
 })
 
@@ -56,7 +62,7 @@ const paragraph = css({
 
 const imageStyle = css({
     objectFit: "cover", 
-    marginRight: "100px",
+    marginLeft: "100px",
     width: "40%",
     height: "100%",
     borderRadius:"5px"
@@ -66,10 +72,11 @@ const imageStyle = css({
 
 export {
     imageStyle,
-    aboutSection,
+    Section,
     Button,
     title,
     paragraph,
     textBlock,
-    buttonText
+    buttonText,
+    block
 }

@@ -1,6 +1,6 @@
 import RoomsImage from "./../images/Rooms.jpg"
 
-import {  imageStyle, Section, Button, title, paragraph, textBlock, buttonText, roomsTypeText } from "./../styles/rooms"
+import {  imageStyle, Section, Button, title, paragraph, textBlock, buttonText, roomsTypeText, block } from "./../styles/rooms"
 
 /** @jsxRuntime classic */
 /** @jsx jsx */
@@ -16,6 +16,7 @@ type Props = {
 
 const Rooms: React.FC<Props> = (props) => {
     return (
+      <div css={block}>
       <div css={Section}>
         <img alt='BreakfastImage' css={imageStyle} src={RoomsImage} />
         <div css={textBlock}>
@@ -26,6 +27,8 @@ const Rooms: React.FC<Props> = (props) => {
             <Button><p css={buttonText}>Read more</p></Button>
         </div>
       </div>
+      </div>
+      
     );
   };
 
