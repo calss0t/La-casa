@@ -39,6 +39,10 @@
   src: url("./fonts/Mulish-SemiBold.ttf");
 }
 
+::placeholder {
+  color: lightgray !important;
+}
+
 
 
 /* .App {
