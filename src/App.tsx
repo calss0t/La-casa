@@ -9,6 +9,7 @@ import Rooms from './Components/Rooms';
 import Activities from './Components/Activities';
 import Coments from './Components/Coments';
 import Newsletter from './Components/Newsletter';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Activities/>
       <Coments/>
       <Newsletter/>
+      <Footer />
     </div>
   );
 }

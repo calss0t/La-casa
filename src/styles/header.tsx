@@ -23,7 +23,6 @@ const imageStyle = css({
 
 const menuStyle = css({
     display: "flex",
-    // float:"right",
     position: "absolute",
     right:"80px",
     listStyleType:"none",
