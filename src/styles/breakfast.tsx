@@ -34,8 +34,7 @@ const Section = css({
     display: "flex",
     margin: "auto",
     width:"75%",
-    paddingTop: "45px",
-    paddingBottom:"45px",
+    paddingBottom:"131px",
     alignItems:"center",
 })
 

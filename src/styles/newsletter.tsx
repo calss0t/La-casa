@@ -5,12 +5,12 @@
 import { jsx, css, Global, ClassNames } from '@emotion/react'
 import styled from '@emotion/styled'
 
-const Button = styled.button`
+const ButtonNewsletter = styled.button`
   color: #FFFFFF;
   background-color: rgba(201, 162, 131, 0.6);
   border-radius: 4px;
-  width: 165px;
-  height:56px;
+  height: 100%;
+  width: 30%;
   display: flex;   
   margin: auto; 
   text-align: center;
@@ -26,29 +26,25 @@ const buttonText = css({
     lineHeight: "24px",
 })
 
-const block= css ({
-    backgroundColor: "rgba(176, 141, 114, 0.05)"
-})
-
-
 const Section = css({
     display: "flex",
     flexDirection:"column",
     margin: "auto",
-    width:"75%",
+    width:"50%",
     paddingTop: "131px",
-    paddingBottom:"131px",
+    paddingBottom:"150px",
     alignItems:"center",
 })
 
-const textBlock = css({
-    height:"100%", 
+const form = css({
+    display: "flex",
+    height:"40px",
+    width:"75%"
 })
 
 const title = css({
     fontFamily: "PlayfairDisplay",
     fontSize: "50px",
-    width:"35%",
     margin: "auto",
     textAlign:"center",
     marginBottom:"42px",
@@ -57,42 +53,12 @@ const title = css({
     color: "#7A3363"
 })
 
-const paragraph = css({
-    fontFamily: "Montserrat",
-    width:"50%",
-    margin: "auto",
-    textAlign:"center",
-    marginBottom:"42px",
-    fontSize: "18px",
-    lineHeight: "30px",
-    letterSpacing: "0.015em",
-    color: "rgba(48, 71, 87, 0.8)"
-})
-
-const imagesBlock = css({
-    display:"flex",
-    marginBottom:"58px"
-})
-
-
-const imageStyle = css({
-    objectFit: "cover", 
-    marginRight: "100px",
-    width: "40%",
-    height: "100%",
-    borderRadius:"5px"
-})
-
 
 
 export {
-    imageStyle,
     Section,
-    Button,
+    ButtonNewsletter,
     title,
-    paragraph,
-    textBlock,
+    form,
     buttonText,
-    block,
-    imagesBlock
 }

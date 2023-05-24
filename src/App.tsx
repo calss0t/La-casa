@@ -7,6 +7,8 @@ import About from './Components/About';
 import Breakfast from './Components/Breakfast';
 import Rooms from './Components/Rooms';
 import Activities from './Components/Activities';
+import Coments from './Components/Coments';
+import Newsletter from './Components/Newsletter';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Breakfast />
       <Rooms />
       <Activities/>
+      <Coments/>
+      <Newsletter/>
     </div>
   );
 }

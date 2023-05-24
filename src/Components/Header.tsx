@@ -1,6 +1,6 @@
 import LOGO from "./../images/LOGO.png"
 
-import {headerStyle, imageStyle, menuStyle, menuButtonsStyle} from "./../styles/header"
+import {headerStyle, imageStyle, menuStyle, menuButtonsStyle, block } from "./../styles/header"
 
 /** @jsxRuntime classic */
 /** @jsx jsx */
@@ -17,11 +17,11 @@ type Props = {
 
 const Header: React.FC<Props> = (props) => {
   return (
-    <div css={headerStyle}>
+    <div css={block}>
+      <div css={headerStyle}>
       <div >
         <img alt='logo' src={LOGO} css={imageStyle} />
       </div>
-      <div >
         <ul css={menuStyle}>
           <li css={menuButtonsStyle}>
             About us
@@ -39,8 +39,9 @@ const Header: React.FC<Props> = (props) => {
             Contact
           </li>
         </ul>
-      </div>
     </div>
+    </div>
+    
   );
 };
 
