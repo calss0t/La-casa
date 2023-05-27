@@ -10,7 +10,7 @@ const Button = styled.button`
   background-color: rgba(201, 162, 131, 0.6);
   border-radius: 4px;
   width: 165px;
-  height:56px;
+  height: 56px;
   display: flex;   
   margin: auto; 
   text-align: center;
@@ -35,6 +35,7 @@ const bookingBoxOuter = css({
     display:"flex",
     flexDirection:"column",
     width:"100%",
+    height:"100%"
 })
 
 const bookingBoxInner = css({
@@ -77,6 +78,7 @@ const bookingTitle = css({
     marginBottom:"0px"
 })
 
+
 export {
     imageStyle,
     bookingFormOuter,
@@ -86,5 +88,5 @@ export {
     buttonText,
     bookingBoxOuter,
     bookingBoxInner,
-    bookingTitle
+    bookingTitle,
 }

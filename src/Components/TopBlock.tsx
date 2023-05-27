@@ -5,6 +5,8 @@ import Form from 'react-bootstrap/Form';
 import { MDBIcon } from 'mdb-react-ui-kit';
 import moment from "moment";
 import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import "../App.css"
 
 
 import { imageStyle, bookingFormOuter, section, bookingFormInner, Button, buttonText, bookingBoxOuter, bookingBoxInner, bookingTitle } from "./../styles/TopBlock"
@@ -23,8 +25,8 @@ type Props = {
 
 
 const TopBlock: React.FC<Props> = (props) => {
-  const [startDate, setStartDate] = useState<string>(moment().format('DD/MM/YYYY'))
-  const [endDate, setEndDate] = useState<string>(moment().add(1, "day").format('DD/MM/YYYY'))
+  const [startDate, setStartDate] = useState<Date | any>()
+  const [endDate, setEndDate] = useState<Date | any>()
 
 
   return (
@@ -37,7 +39,14 @@ const TopBlock: React.FC<Props> = (props) => {
               <p css={bookingTitle}> Check in </p>
               <div css={bookingBoxInner} style={{ borderRight: "1px solid #BBC8D4" }}>
                 <MDBIcon icon="calendar-alt" style={{ color: "#6D7D8B", paddingRight: "5px" }} />
-                <DatePicker selected={new Date()} onSelect={()=> console.log(setEndDate)} onChange={(date)=>console.log(date)}/>
+                  <DatePicker 
+                  onChange={(date) => setStartDate(date)} 
+                  className="datepicker-form"
+                  placeholderText={moment().format("DD/MM/YYYY")}
+                  minDate={new Date()} 
+                  monthsShown={2}
+                  selected={startDate}
+                  />
                 {/* <Form.Control
                   placeholder={startDate}
                   aria-label="Email"
@@ -59,7 +68,14 @@ const TopBlock: React.FC<Props> = (props) => {
               <p css={bookingTitle}> Check out </p>
               <div css={bookingBoxInner} style={{ borderRight: "1px solid #BBC8D4" }}>
                 <MDBIcon icon="calendar-alt" style={{ color: "#6D7D8B", paddingRight: "5px" }} />
-                <Form.Control
+                <DatePicker 
+                placeholderText={moment().add(1, 'days').format("DD/MM/YYYY")}
+                onChange={(date) => setEndDate(date)} 
+                className="datepicker-form" 
+                minDate={startDate}
+                monthsShown={2}
+                />
+                {/* <Form.Control
                   placeholder={endDate}
                   aria-label="Email"
                   style={{
@@ -71,7 +87,7 @@ const TopBlock: React.FC<Props> = (props) => {
                     lineHeight: "150.6%",
                     // color: "#DAE3EA",
                   }}
-                />
+                /> */}
 
               </div>
             </div>
