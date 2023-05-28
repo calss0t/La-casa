@@ -10,7 +10,7 @@ const Button = styled.button`
   background-color: rgba(201, 162, 131, 0.6);
   border-radius: 4px;
   width: 165px;
-  height: 56px;
+  height: 40px;
   display: flex;   
   margin: auto; 
   text-align: center;
@@ -56,15 +56,16 @@ const bookingFormOuter= css({
     top:"-150px",
     margin:"auto",
     textAlign:"center",
-    width: "50%",
-    backgroundColor: "white"
+    width: "fit-content",
 })
 
 const bookingFormInner= css({
     margin:"auto",
-    padding:"15px",
-    backgroundColor: "blue",
+    padding:"5px 20px 5px",
+    backgroundColor: "white",
     display:"flex",
+    borderRadius:"10px"
+
 })
 
 const bookingTitle = css({

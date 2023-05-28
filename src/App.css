@@ -59,15 +59,19 @@
 
 }
 
-.react-datepicker__today-button {
+/* .react-datepicker__today-button {
 
 }
 
 .react-datepicker {
 
-}
+} */
 
 .react-datepicker__day-name{
   font-weight: bold !important;
   color: lightgray !important;
 }  
+
+.popover {
+  width: 100%;
+}

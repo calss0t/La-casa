@@ -14,6 +14,7 @@
     "@types/react": "^18.2.6",
     "@types/react-datepicker": "^4.11.2",
     "@types/react-dom": "^18.2.4",
+    "bootstrap": "^5.2.3",
     "bootstrap-css-only": "^4.4.1",
     "mdb-react-ui-kit": "^6.0.0",
     "mdbreact": "^5.2.0",

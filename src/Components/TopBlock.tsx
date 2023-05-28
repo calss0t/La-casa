@@ -16,6 +16,7 @@ import { imageStyle, bookingFormOuter, section, bookingFormInner, Button, button
 
 
 import { jsx, css, Global, ClassNames } from '@emotion/react'
+import PopoverRooms from "./PopoverRooms";
 
 
 
@@ -47,20 +48,6 @@ const TopBlock: React.FC<Props> = (props) => {
                   monthsShown={2}
                   selected={startDate}
                   />
-                {/* <Form.Control
-                  placeholder={startDate}
-                  aria-label="Email"
-                  style={{
-                    border: "none",
-                    height: "100%",
-                    width: "100%",
-                    fontFamily: "Montserrat-SemiBold",
-                    fontSize: "14px",
-                    lineHeight: "150.6%",
-                    // color: "#DAE3EA"
-                  }}
-                /> */}
-
               </div>
             </div>
             <hr />
@@ -74,21 +61,8 @@ const TopBlock: React.FC<Props> = (props) => {
                 className="datepicker-form" 
                 minDate={startDate}
                 monthsShown={2}
+                selected={endDate}
                 />
-                {/* <Form.Control
-                  placeholder={endDate}
-                  aria-label="Email"
-                  style={{
-                    border: "none",
-                    height: "100%",
-                    width: "100%",
-                    fontFamily: "Montserrat-SemiBold",
-                    fontSize: "14px",
-                    lineHeight: "150.6%",
-                    // color: "#DAE3EA",
-                  }}
-                /> */}
-
               </div>
             </div>
             <hr />
@@ -96,24 +70,11 @@ const TopBlock: React.FC<Props> = (props) => {
               <p css={bookingTitle}> Guests </p>
               <div css={bookingBoxInner}>
                 <MDBIcon icon="user-alt" style={{ color: "#6D7D8B", paddingRight: "5px" }} />
-                <Form.Control
-                  placeholder="Email"
-                  aria-label="Email"
-                  style={{
-                    border: "none",
-                    height: "100%",
-                    width: "100%",
-                    fontFamily: "Montserrat-SemiBold",
-                    fontSize: "14px",
-                    lineHeight: "150.6%",
-                    // color: "#DAE3EA"
-                  }}
-                />
-
+                <PopoverRooms/>
               </div>
             </div>
           </div>
-          <Button><p css={buttonText}>Read more</p></Button>
+          <Button><p css={buttonText}>Search</p></Button>
         </div>
       </div>
     </div>
