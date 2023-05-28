@@ -62,6 +62,14 @@ const subText = css({
     color:"gray"
 })
 
+const numberPopover = css({
+    fontWeight:"Bold",
+    fontFamily: "Montserrat-Medium",
+    fontSize: "14px",
+    lineHeight: "150.6%",
+    marginBottom:"0px"
+})
+
 
 
 
@@ -73,5 +81,6 @@ export {
     popoverText,
     iconNumberBox,
     mainText,
-    subText
+    subText,
+    numberPopover
 }

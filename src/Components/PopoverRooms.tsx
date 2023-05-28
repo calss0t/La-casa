@@ -6,7 +6,7 @@ import Popover from 'react-bootstrap/Popover';
 import Form from 'react-bootstrap/Form';
 import { MDBIcon } from 'mdb-react-ui-kit';
 
-import { popoverSubDivision, popoverText, iconNumberBox, mainText, subText, buttonText, ButtonPopover } from '../styles/PopoverRooms';
+import { popoverSubDivision, popoverText, iconNumberBox, mainText, subText, buttonText, ButtonPopover, numberPopover} from '../styles/PopoverRooms';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,7 +18,7 @@ import { jsx, css, Global } from '@emotion/react'
 
 
 function PopoverRooms() {
-  const [rooms, setRooms] = useState<number>(0)
+  const [rooms, setRooms] = useState<number>(1)
   const [adults, setAdults] = useState<number>(2)
   const [children, setChildren] = useState<number>(0)
 
@@ -70,7 +70,7 @@ function PopoverRooms() {
                   </div>
                   <div css={iconNumberBox}>
                     <MDBIcon fas icon="plus" style={{ color: "#6D7D8B", padding: "10px", cursor: "pointer" }} size="2x" onClick={sumRooms} />
-                    {rooms}
+                    <p css={numberPopover}>{rooms}</p>
                     <MDBIcon fas icon="minus" style={{ color: "#6D7D8B", padding: "10px", cursor: "pointer" }} size="2x" onClick={diffRooms} />
                   </div>
                 </div>
@@ -83,7 +83,7 @@ function PopoverRooms() {
                   </div>
                   <div css={iconNumberBox}>
                     <MDBIcon fas icon="plus" style={{ color: "#6D7D8B", padding: "10px", cursor: "pointer" }} size="2x" onClick={sumAdults} />
-                    {adults}
+                    <p css={numberPopover}>{adults}</p>
                     <MDBIcon fas icon="minus" style={{ color: "#6D7D8B", padding: "10px", cursor: "pointer" }} size="2x" onClick={diffAdults} />
                   </div>
                 </div>
@@ -96,7 +96,7 @@ function PopoverRooms() {
                   </div>
                   <div css={iconNumberBox}>
                     <MDBIcon fas icon="plus" style={{ color: "#6D7D8B", padding: "10px", cursor: "pointer" }} size="2x" onClick={sumChildren} />
-                    {children}
+                    <p css={numberPopover}>{children}</p>
                     <MDBIcon fas icon="minus" style={{ color: "#6D7D8B", padding: "10px", cursor: "pointer" }} size="2x" onClick={diffChildren} />
                   </div>
 
@@ -108,8 +108,11 @@ function PopoverRooms() {
         }
       >
         <ButtonPopover>
-        <p css={buttonText}>{adults} adults  {children>0 ? `, ${children} children`: ""}</p>
-        <MDBIcon fas icon="angle-down" style={{ color: "#6D7D8B", paddingRight: "5px" }} size="sm" />
+          <div css={popoverText}>
+            <p css={buttonText}>{adults} adults  {children > 0 ? `, ${children} children` : ""}</p>
+            <p css={subText}>{rooms} rooms</p>
+          </div>
+          <MDBIcon fas icon="angle-down" style={{ color: "#6D7D8B", paddingRight: "5px" }} size="sm" />
         </ButtonPopover>
       </OverlayTrigger>
     </>
